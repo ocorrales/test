@@ -1,80 +1,238 @@
 FORMAT: 1A
 HOST: https://polls.apiblueprint.org/
 
-# test
+# DESCARGA CLIENT API
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+Descarga api is the exposed api all clients(iOs, Android, Web, TVs, Consoles, etc...) will hit to retrieve necessary info to perfomr
 
-## Questions Collection modified [/questions]
+## Asset [/asset/{id}]
+Represents an Asset
 
-### List All Questions [GET]
++ Parameters
+    + id (string, `14339`) ... The id of the Asset.
+
+### Get asset details [GET]
 
 + Response 200 (application/json)
 
-        [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
+        {   
+            "summary": "Un nuevo reto comienza y nuevos participantes demostrarán, en una serie de desafíos, quién será el que domine a los cuatro elementos. Ellos llevarán al lími",
+            "summaryShort": "No te pierdas este reality en el que 32 participantes —divididos en ocho equipos— se enfrentarán a una serie de pruebas físicas, para dominar a los 4 elementos, y así llevar al ext",
+            "titleEditorial": "Reto 4 Elementos Naturaleza Extrema",
+            "titleSeo": "4 ELEMENTOS",
+            "titleShort": "4 ELEMENTOS",
+            "videos": [{
+                "originalAudioLanguage": {
+                    "id": 4,
+                    "title": "Spanish"
+                },
+                "definition": "HD",
+                "duration": 0,
+                "files": [{
+                        "id": 176015,
+                        "path": "http://ss-cdn1.blim.com/BLIM0000000000000001/ss/629d09c4372f297f2760c820711c4d4737b14f26c25c55e58f1147819005089e/ss_629d09c4372f297f2760c820711c4d4737b14f26c25c55e58f1147819005089e.ism/Manifest",
+                        "type": "ss"
+                    },
                     {
-                        "choice": "PHP",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
+                        "id": 176016,
+                        "path": "https://dash-cdn1.secure.footprint.net/BLIM0000000000000001/dash/468842_73e838031abcbb849e70b493053a4685/mpds/468842.mpd",
+                        "type": "mpd"
+                    },
+                    {
+                        "id": 176017,
+                        "path": "https://hls-cdn1.secure.footprint.net/BLIM0000000000000001/hls/468843_5be897665bc004ba630404690a69fad4/m3u8s/468843.m3u8",
+                        "type": "hls"
                     }
-                ]
-            }
-        ]
+                ],
+                "id": 39531,
+                "resolution": "1080i",
+                "screenFormat": "widescreen",
+                "videoType": "full"
+            }],
+            "averageRating": 4,
+            "distributor": {
+                "entity": "distributor",
+                "id": 19,
+                "title": "TVSA"
+            },
+            "airDate": "2018-01-02T06:00:00Z",
+            "downloadable": false,
+            "introEnd": 30,
+            "introStart": 0,
+            "genre": {
+                "id": 34510,
+                "title": "Eventos Deportivos"
+            },
+            "id": 40555,
+            "endOfVideoPosition": 550,
+            "availableStartDate": "2030-12-31T05:59:00Z",
+            "availableEndDate": "2020-04-13T05:00:00Z",
+            "modifiedAt": "2021-02-05T02:50:43Z",
+            "otherGenres": [{
+                    "id": 34511,
+                    "title": "Novela"
+                },
+                {
+                    "id": 34512,
+                    "title": "Accion"
+                }
+            ],
+            "cast": [{
+                    "displayName": "Cristian de la Fuente",
+                    "id": 29294,
+                    "category": "actor"
+                },
+                {
+                    "displayName": "Monserrat Oliver",
+                    "id": 42253,
+                    "category": "actor"
+                },
+                {
+                    "displayName": "Frank Schoermman",
+                    "entity": "person",
+                    "id": 42272,
+                    "category": "producer"
+                },
+                {
+                    "displayName": "El \"Bazooka\" Joe",
+                    "entity": "person",
+                    "id": 42492,
+                    "category": "director"
+                }
+            ],
+            "pictures": [{
+                    "id": 106846,
+                    "pictureType": "landscape",
+                    "title": "Reto4ElementosT2_Landscape.jpg",
+                    "versions": [{
+                            "height": 1080,
+                            "id": 682112,
+                            "profile": "main",
+                            "width": 1920,
+                            "link": "https://static0.blim.com/images/picture/2018/08/14/23827/reto4elementost2_landscape_main.jpg"
+                        },
+                        {
+                            "height": 360,
+                            "id": 682113,
+                            "profile": "vga-landscape",
+                            "width": 640,
+                            "link": "https://static0.blim.com/images/picture/2018/08/14/23827/reto4elementost2_landscape_3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "id": 106847,
+                    "pictureType": "portrait",
+                    "title": "Reto4ElementosT2_Portrait.jpg",
+                    "versions": [{
+                            "height": 1400,
+                            "id": 682117,
+                            "profile": "main",
+                            "width": 1000,
+                            "link": "https://static0.blim.com/images/picture/2018/08/14/23828/reto4elementost2_portrait_main.jpg"
+                        },
+                        {
+                            "height": 447,
+                            "id": 682118,
+                            "profile": "hvga-portrait",
+                            "width": 319,
+                            "link": "https://static0.blim.com/images/picture/2018/08/14/23828/reto4elementost2_portrait_1.jpg"
+                        }
+                    ]
+                }
+            ],
+            "subscriptionType": [
+                "avod", "svod"
+            ],
+            "studio": {
+                "id": 55,
+                "title": "Televisa S.A. de C.V."
+            },
+            "provider": {
+                "id": 32,
+                "title": "Blue Films provider"
+            },
+            "isKidContent": false,
+            "isPremiere": false,
+            "mediaKey": "mi-gorda-bella",
+            "keywords": [
+                "Reto",
+                "Televisa"
+            ],
+            "showType": "movie",
+            "duration": 0,
+            "territories": [
+                "+BR", "+MX", "-VE"
+            ],
+            "rating": {
+                "id": 13,
+                "permittedRating": "B",
+                "description": "Some material may be inappropriate for children under 13. Parents are urged to be cautious. Some material may be inappropriate for pre-teenagers.",
+                "key": "PG-13",
+                "label": "PG-13"
+            },
+            "originalLanguage": "PT-BR",
 
-### Create a New Question [POST]
 
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
+            "parentShow": {
+                "id": 40555,
+                "title": "4 ELEMENTOS",
+                "titleEditorial": "Reto 4 Elementos Naturaleza Extrema"
+            },
+            "episodeNumber": 1,
+            "seasonNumber": 1,
 
-+ Request (application/json)
 
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
+
+            "seasons": [{
+                "airDate": null,
+                "episodes": [{
+                    "downloadable": true,
+                    "duration": 7500,
+                    "episodeNumber": 1,
+                    "episodeNumberEditorial": null,
+                    "id": 40638,
+                    "summary": "En la imponente Riviera Maya conoce a las 32 celebridades, quienes conforman a los ocho equipos participantes. ¡Bienvenidos a una competencia épica: reto 4 elementos, naturaleza extrema!",
+                    "title": "Capitulo 1",
+                    "titleEditorial": "El inicio: 32 celebridades",
+                    "subscriptionType": [
+                        "svod"
+                    ]
+                }],
+                "id": 1338,
+                "number": 1,
+                "numberEditorial": null,
+                "title": "Season 1",
+                "episodeCount": 70
+            }]
         }
 
-+ Response 201 (application/json)
++ Response 404
 
-    + Headers
+    ```js
+    {
+      "headers": {},
+      "data": [],
+      "messages": [
+        {
+          "value": "Asset not found",
+          "context": null
+        }
+      ]
+    }
+    ```
 
-            Location: /questions/2
++ Response 500 (application/json)
 
-    + Body
-
+    ```js
+    {
+        "headers": {},
+        "data": [],
+        "messages": [
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
+                "context": null,
+                "value": "We are having an internal issue try again later our support team have already been notify."
             }
+        ]
+    }
+    ```
